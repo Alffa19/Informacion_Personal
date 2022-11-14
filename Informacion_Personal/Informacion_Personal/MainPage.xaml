@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Informacion_Personal.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Entry x:Name="txtnombre" Placeholder="Ingrese Nombre" Keyboard="Text"/>
+        <Entry x:Name="txtapellido" Placeholder="Ingrese Apellido" Keyboard="Text"/>
+        <Entry x:Name="txtedad" Placeholder="Ingrese Edad" Keyboard="Numeric"/>
+        <Entry x:Name="txtcorreo" Placeholder="Ingrese Correo" Keyboard="Email"/>
+        <Button x:Name="btnEnviarInformacion" 
+                Text="Envian Informacion" 
+                Clicked="btnEnviarInformacion_Clicked"
+                BackgroundColor="Yellow"/>
+    </StackLayout>
+
+</ContentPage>
